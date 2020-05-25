@@ -46,13 +46,17 @@
 
 ### Megjelenés
 
+#### Bejelentkezés(Kezdő oldal):
+
+![alt text](https://github.com/sudi001/fdf26a_web3/blob/master/login.PNG)
+
 #### Főoldal:
 
-
+![alt text](https://github.com/sudi001/fdf26a_web3/blob/master/home.PNG)
 
 #### Hibaüzenet vendég számára:
 
-![alt text](https://github.com/sudi001/fdf26a_web3/blob/master/home.PNG)
+![alt text](https://github.com/sudi001/fdf26a_web3/blob/master/error.PNG)
 
 #### Város adatainak szerkesztése:
 
@@ -65,10 +69,6 @@
 #### Felhazsnálók szerkesztése:
 
 ![alt text](https://github.com/sudi001/fdf26a_web3/blob/master/users.PNG)
-
-#### Bejelentkezés(Kezdő oldal):
-
-![alt text](https://github.com/sudi001/fdf26a_web3/blob/master/login.PNG)
 
 ## Implementáció
 
