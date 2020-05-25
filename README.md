@@ -1,6 +1,6 @@
 # FDF26A_WEB3
  
-	## **Követelményanalízis**
+## Követelményanalízis
 
 ### Előzetes követelmények az alábbiak:
 
