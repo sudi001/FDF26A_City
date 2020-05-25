@@ -56,19 +56,19 @@
 
 #### Város adatainak szerkesztése:
 
-![enter image description here](edit.png)
+![alt text](https://github.com/sudi001/fdf26a_web3/blob/master/edit.PNG)
 
 #### Új felhasználó:
 
-![enter image description here](createuser.jpg)
+![alt text](https://github.com/sudi001/fdf26a_web3/blob/master/createuser.PNG)
 
 #### Felhazsnálók szerkesztése:
 
-![enter image description here](users.jpg)
+![alt text](https://github.com/sudi001/fdf26a_web3/blob/master/users.PNG)
 
 #### Bejelentkezés(Kezdő oldal):
 
-![enter image description here](login.jpg)
+![alt text](https://github.com/sudi001/fdf26a_web3/blob/master/login.PNG)
 
 ## Implementáció
 
