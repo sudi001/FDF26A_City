@@ -40,9 +40,3 @@ If your company would like a support contract or service agreement please [Reach
 If you're having an issue with CodeIgniter or for general help with development I recommend checking out the [CodeIgniter Forums](http://forum.codeigniter.com).
 
 If you think you've found a bug please [Create an Issue](https://github.com/benedmunds/CodeIgniter-Ion-Auth/issues).
-
-
-Thanks,    
--Ben Edmunds       
- [benedmunds.com](http://benedmunds.com)  
- [@benedmunds](http://twitter.com/benedmunds)   
