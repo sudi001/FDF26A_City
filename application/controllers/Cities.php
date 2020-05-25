@@ -50,7 +50,7 @@ class Cities extends CI_Controller {
     public function edit($id = NULL) {
         if (!$this->ion_auth->is_admin()) { // remove this elseif if you want to enable this for non-admins
             // redirect them to the home page because they must be an administrator to view this
-            show_error('Csak az adminisztrátorok törölhetnek.');
+            show_error('Csak az adminisztrátorok módosíthatnak.');
         } else {
             if ($id == NULL) {
                 show_error('A szerkesztéshez hiányzik az id!');
