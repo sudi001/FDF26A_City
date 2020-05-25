@@ -6,7 +6,12 @@ echo "<script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity
 $this->load->library('ion_auth');
 $username = $this->session->userdata('email');
 
-echo "<link rel =\"stylesheet\" href =\"css/bootstrap.min.css\" type=\"text/css\">";
+$css_url = base_url('/css/bootstrap.min.css');
+$home_url = base_url('/cities');
+$uploads_url = base_url('/uploads');
+$auth_url = base_url('/auth');
+
+echo "<link rel =\"stylesheet\" href =\"$css_url\" type=\"text/css\">";
 
 echo "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
   <a class=\"navbar-brand\" href=\"#\">Város nyilvántartó rendszer</a>
@@ -15,7 +20,7 @@ echo "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
   <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
     <ul class=\"navbar-nav mr-auto\">
       <li class=\"nav-item active\">
-        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>
+        <a class=\"nav-link\" href=\"$home_url\">Home <span class=\"sr-only\">(current)</span></a>
       </li>
       <li class=\"nav-item dropdown\">
         <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
@@ -25,7 +30,7 @@ echo "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 
 if ($this->ion_auth->is_admin())
 {
-    echo "<a class=\"dropdown-item\" href=\"auth\">Felhasználók kezelése</a>";
+    echo "<a class=\"dropdown-item\" href=\"$auth_url\">Felhasználók kezelése</a>";
 }
  else {
     echo "<a class=\"dropdown-item\">Ön nem jogosult a vezérlőpult elérésére</a>";
@@ -38,7 +43,7 @@ echo"
         <a class=\"nav-link\">Jelnlegi felhasználó: " . $username . "</a>\n
       </li>
       <li class=\"nav-item\">
-        <a class=\"nav-link\" href=\"auth/logout\">Kijelentkezés</a>\n
+        <a class=\"nav-link\" href=\"$auth_url/logout\">Kijelentkezés</a>\n
       </li>
       
     </ul>

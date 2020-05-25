@@ -1,3 +1,4 @@
+<?php include "common/menuPart.php"; ?>
 <?php echo validation_errors(); ?>
 <?php echo form_open(); ?>
 

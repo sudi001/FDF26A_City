@@ -30,9 +30,9 @@
                     $imageFileName = 'uploads/'.$cit->id . '.jpg';
 
                     if (file_exists($imageFileName)) {
-                        echo "<td><img src=\"uploads/". $cit->id .".jpg\" width=\"320\" height=\"240\"></td>";
+                        echo "<td><img src=\"$uploads_url/$cit->id.jpg\" width=\"320\" height=\"240\"></td>";
                     } else {
-                        echo "<td><img src=\"uploads/unknown.jpg\" width=\"320\" height=\"240\"></td>";
+                        echo "<td><img src=\"$uploads_url/unknown.jpg\" width=\"320\" height=\"240\"></td>";
                     }
                     ?>
                     <td>

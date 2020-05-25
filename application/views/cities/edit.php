@@ -1,4 +1,6 @@
+<?php include "common/menuPart.php"; ?>
 <?php echo validation_errors(); ?>
+
 <?php echo form_open(); ?>
 
 <?php echo form_label('Város neve:','cit_name'); ?>
