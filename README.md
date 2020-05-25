@@ -40,6 +40,8 @@
 -   Korlátozott felhasználó
 -   Szuperadmin
 
+### Végpontok
+
 ### Szekvencia diagram
 
 ### Adatmodell
@@ -75,7 +77,7 @@
 **Fejlesztői környezet: Apache NetBeans (Codeigniter Web Framework)**
 
   Használat: bármely böngészőben a ***localhost/fdf26a_web3/auth/login*** a kezdőoldal.
-  A további oldalak nem érhetőek el bejelentkezés nélkül, ezt hibaüzenet közli a vendéggel.
+  A további oldalak pl: cities, auth nem érhetőek el bejelentkezés nélkül, ezt hibaüzenet közli a vendéggel.
 
 
 **Regisztrációs adatok validálása**  
