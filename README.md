@@ -56,7 +56,7 @@
 
 #### Város adatainak szerkesztése:
 
-![enter image description here](edit.jpg)
+![enter image description here](edit.png)
 
 #### Új felhasználó:
 
