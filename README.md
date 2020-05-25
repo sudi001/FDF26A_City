@@ -48,11 +48,11 @@
 
 #### Főoldal:
 
-![enter image description here](home.jpg)
+
 
 #### Hibaüzenet vendég számára:
 
-![enter image description here](error.jpg)
+![alt text](https://github.com/sudi001/fdf26a_web3/blob/master/home.PNG)
 
 #### Város adatainak szerkesztése:
 
