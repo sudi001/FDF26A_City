@@ -1,24 +1,15 @@
-<?php
-$this->load->library('ion_auth');
-$username = $this->session->userdata('email');
-echo "Jelnlegi felhasználó: " . $username . " ";
-echo "<a href=\"auth/logout\">Kijelentkezés</a>\n";
-echo "<br>";
-echo "<a href=\"auth\">Felhasználók kezelése (admin számára)</a>";
-echo "<br>";
-
-?>
-
-<?php echo anchor(base_url('cities/insert'), 'Új hozzáadása'); ?>
-<?php echo "<br>" ?>
-
-
+<?php include "common/menuPart.php"; ?>
 
 <?php if ($cities == NULL || empty($cities)): ?>
     <p>Nincs rögzítve egyetlen város sem!</p>
 <?php else: ?>
-    <?php echo anchor(base_url('cities/exportAsCsv/'), 'Városok adatainak exportálása csv-be'); ?>
-    <table>
+    <?php
+    echo "<div class=\"text-center\"> ";
+    echo "<button type=\"button\" onclick=\"location.href = 'cities/insert';\" class=\"btn btn-success\">Új hozzáadása</button>";
+    echo "<button type=\"button\" onclick=\"location.href = 'cities/exportAsCsv/';\" class=\"btn btn-primary\">Városok adatainak exportálása csv-be</button>";
+    echo "</div>";
+    ?>
+    <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
@@ -35,7 +26,15 @@ echo "<br>";
                     <td><?= $cit->id ?></td>
                     <td><?= $cit->name ?></td>
                     <td><?= $cit->postal_code ?></td>
-                    <td><img src="uploads/<?= $cit->id ?>.jpg" width="320" height="240"></td>
+                    <?php
+                    $imageFileName = 'uploads/'.$cit->id . '.jpg';
+
+                    if (file_exists($imageFileName)) {
+                        echo "<td><img src=\"uploads/". $cit->id .".jpg\" width=\"320\" height=\"240\"></td>";
+                    } else {
+                        echo "<td><img src=\"uploads/unknown.jpg\" width=\"320\" height=\"240\"></td>";
+                    }
+                    ?>
                     <td>
                         <?php echo anchor(base_url('cities/edit/' . $cit->id), 'Módosítás'); ?>
                         <?php echo anchor(base_url('cities/delete/' . $cit->id), 'Törlés'); ?>
