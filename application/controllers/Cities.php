@@ -11,7 +11,7 @@ class Cities extends CI_Controller {
 
     public function index() {
 
-        $this->load->library('ion_auth');
+        //$this->load->library('ion_auth');
         if (!$this->ion_auth->logged_in()) { // remove this elseif if you want to enable this for non-admins
             // redirect them to the home page because they must be an administrator to view this
             show_error('Bejelentkezés nélkül nem tekintheted meg a városokat.');
@@ -28,7 +28,7 @@ class Cities extends CI_Controller {
     public function insert() {
         if (!$this->ion_auth->is_admin()) { // remove this elseif if you want to enable this for non-admins
             // redirect them to the home page because they must be an administrator to view this
-            show_error('Csak az adminisztrátorok törölhetnek.');
+            show_error('Csak az adminisztrátorok adhatnak hozzá várost.');
         } else {
             if ($this->input->post('submit')) {
                 $this->load->library('form_validation');

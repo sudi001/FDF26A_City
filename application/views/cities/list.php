@@ -2,8 +2,11 @@
 $this->load->library('ion_auth');
 $username = $this->session->userdata('email');
 echo "Jelnlegi felhasználó: " . $username . " ";
-echo "<a href=\"auth/logout\">Kijelentkezés</a>";
+echo "<a href=\"auth/logout\">Kijelentkezés</a>\n";
 echo "<br>";
+echo "<a href=\"auth\">Felhasználók kezelése (admin számára)</a>";
+echo "<br>";
+
 ?>
 
 <?php echo anchor(base_url('cities/insert'), 'Új hozzáadása'); ?>
@@ -14,7 +17,7 @@ echo "<br>";
 <?php if ($cities == NULL || empty($cities)): ?>
     <p>Nincs rögzítve egyetlen város sem!</p>
 <?php else: ?>
-    <?php echo anchor(base_url('cities/exportAsCsv/'), 'Export as csv'); ?>
+    <?php echo anchor(base_url('cities/exportAsCsv/'), 'Városok adatainak exportálása csv-be'); ?>
     <table>
         <thead>
             <tr>
@@ -36,6 +39,7 @@ echo "<br>";
                     <td>
                         <?php echo anchor(base_url('cities/edit/' . $cit->id), 'Módosítás'); ?>
                         <?php echo anchor(base_url('cities/delete/' . $cit->id), 'Törlés'); ?>
+                        <?php echo "<a href=\"file_upload\form\">Kép feltöltés</a>"; ?>
                     </td>
                     
                     <!--td>
