@@ -1,3 +1,4 @@
+<?php include "common/menuPart.php"; ?>
 <h1><?php echo lang('create_group_heading');?></h1>
 <p><?php echo lang('create_group_subheading');?></p>
 

@@ -11,7 +11,6 @@ class Cities extends CI_Controller {
 
     public function index() {
 
-        //$this->load->library('ion_auth');
         if (!$this->ion_auth->logged_in()) { // remove this elseif if you want to enable this for non-admins
             // redirect them to the home page because they must be an administrator to view this
             show_error('Bejelentkezés nélkül nem tekintheted meg a városokat.');
@@ -80,15 +79,10 @@ class Cities extends CI_Controller {
     }
 
     public function exportAsCsv() {
-
         $this->load->dbutil();
-
         $query = $this->db->query("SELECT * FROM cities");
-
         $csvdata = $this->dbutil->csv_from_result($query);
-
         $csvdata = str_replace(",", ";", $csvdata);
-
         $csvdata = preg_replace('/\s+/', "\n", $csvdata);
 
         header("Content-type: application/octet-stream");

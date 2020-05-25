@@ -37,15 +37,8 @@
                     ?>
                     <td>
                         <?php echo anchor(base_url('cities/edit/' . $cit->id), 'Módosítás'); ?>
-                        <?php echo anchor(base_url('cities/delete/' . $cit->id), 'Törlés'); ?>
-                        <?php echo "<a href=\"file_upload\form\">Kép feltöltés</a>"; ?>
+                        <?php echo anchor(base_url('cities/delete/' . $cit->id), 'Törlés'); ?>                       
                     </td>
-                    
-                    <!--td>
-                        <!--?php
-                        echo file_get_contents("application/views/cities/upload.html");
-                        ?>
-                    </td-->
                     
                 </tr>
             <?php endforeach; ?>

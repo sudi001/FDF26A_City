@@ -1,3 +1,4 @@
+<?php include "common/menuPart.php"; ?>
 <h1><?php echo lang('deactivate_heading');?></h1>
 <p><?php echo sprintf(lang('deactivate_subheading'), $user->username);?></p>
 
