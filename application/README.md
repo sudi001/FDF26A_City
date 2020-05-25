@@ -1,15 +1,4 @@
 # Ion Auth 3
-### The future of authentication
-by [Ben Edmunds](http://benedmunds.com)
-
-Simple and lightweight authentication for your CodeIgniter apps.
-
-Ion Auth 2 dropped any backwards compatibility and made things more
-awesome.
-
-Ion Auth 3, while not dropping as much backwards compatibility, made things
-even more awesome!
-
 ## Server requirements
 Ion Auth 3 needs **CodeIgniter 3** and **PHP 5.6**.
 It should work on 5.4 as well, but we strongly advise you NOT to run such old versions of PHP, because of potential security and performance issues.
@@ -51,9 +40,3 @@ If your company would like a support contract or service agreement please [Reach
 If you're having an issue with CodeIgniter or for general help with development I recommend checking out the [CodeIgniter Forums](http://forum.codeigniter.com).
 
 If you think you've found a bug please [Create an Issue](https://github.com/benedmunds/CodeIgniter-Ion-Auth/issues).
-
-
-Thanks,    
--Ben Edmunds       
- [benedmunds.com](http://benedmunds.com)  
- [@benedmunds](http://twitter.com/benedmunds)   
