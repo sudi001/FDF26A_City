@@ -78,7 +78,7 @@
 
   Használat: bármely böngészőben a ***localhost/fdf26a_web3/auth/login*** a kezdőoldal.
   A további oldalak pl: cities, auth nem érhetőek el bejelentkezés nélkül, ezt hibaüzenet közli a vendéggel.
-
+		A használt adatbázis az ***init.sql*** fájlba lett exportálva.
 
 **Regisztrációs adatok validálása**  
  - Leírás: Regisztráció során ellenőrzi, hogy a felhasználó megfelelő adatokat adott-e meg:  
