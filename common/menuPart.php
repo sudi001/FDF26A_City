@@ -14,7 +14,7 @@ $auth_url = base_url('/auth');
 echo "<link rel =\"stylesheet\" href =\"$css_url\" type=\"text/css\">";
 
 echo "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
-  <a class=\"navbar-brand\" href=\"#\">Város nyilvántartó rendszer</a>
+  <a class=\"navbar-brand\">Város nyilvántartó rendszer</a>
   
 
   <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
